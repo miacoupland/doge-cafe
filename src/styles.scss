@@ -1,0 +1,65 @@
+$white: #ffffff;
+
+body {
+   margin: 0 auto;
+}
+
+#main-h1 {
+   font-size: 70px;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: 700;
+   background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(10%, #f1e88e),
+      color-stop(50%, #ffbbdd),
+      color-stop(60%, #e47272)
+   );
+   background: linear-gradient(to right, #f1e88e 10%, #ffbbdd 50%, #e47272 60%);
+   background-size: auto auto;
+   background-clip: border-box;
+   background-size: 200% auto;
+   background-clip: text;
+   color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-animation: textclip 1.5s linear infinite;
+   animation: textclip 1.5s linear infinite;
+   @keyframes textclip {
+      to {
+         background-position: 200% center;
+      }
+   }
+   margin: 0.7em auto;
+}
+
+#nav-bar {
+   background: url("https://preview.redd.it/a3ftzqi7ide71.png?auto=webp&s=7cc4389f7b7d621216c70cc9f1d43e57f76e3d0d")
+      no-repeat center;
+   background-size: cover;
+   // vmax = viewmax, 100 = 100%
+   width: 100vmax;
+   height: 20vmax;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   #nav-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+   }
+
+   .nav-link {
+      list-style-type: none;
+      font-size: 2rem;
+
+      a {
+         text-decoration: none;
+         color: $white;
+      }
+   }
+}
