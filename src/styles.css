@@ -46,4 +46,12 @@ body {
 #nav-bar .nav-link a {
   text-decoration: none;
   color: #ffffff;
+  transition: border-color 0.3s, color 0.3s, transform 0.3s;
+  font-weight: 900;
+}
+#nav-bar .nav-link a:hover {
+  color: #ffbbdd;
+  filter: drop-shadow(0 0 1.4em rgb(255, 170, 221));
+  box-shadow: 0 0.8em 0.8em -0.5em rgb(255, 170, 221);
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

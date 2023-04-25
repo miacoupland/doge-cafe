@@ -1,4 +1,6 @@
 $white: #ffffff;
+$primary: #ffbbdd;
+$secondry: #e47272;
 
 body {
    margin: 0 auto;
@@ -60,6 +62,15 @@ body {
       a {
          text-decoration: none;
          color: $white;
+         transition: border-color 0.3s, color 0.3s, transform 0.3s;
+         font-weight: 900;
+      }
+      a:hover {
+         color: $primary;
+         // Need to ask Mia about the funky interaction this has with the title.
+         filter: drop-shadow(0 0 1.4em rgb(255, 170, 221));
+         box-shadow: 0 0.8em 0.8em -0.5em rgb(255, 170, 221);
+         cursor: pointer;
       }
    }
 }
