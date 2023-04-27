@@ -6,7 +6,8 @@ body {
   font-size: 70px;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 700;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
   background: linear-gradient(to right, #f1e88e 10%, #ffbbdd 50%, #e47272 60%);
   background-size: auto auto;
   background-clip: border-box;
@@ -25,6 +26,7 @@ body {
 }
 
 #nav-bar {
+  font-family: "Righteous", cursive;
   background: url("https://preview.redd.it/a3ftzqi7ide71.png?auto=webp&s=7cc4389f7b7d621216c70cc9f1d43e57f76e3d0d") no-repeat center;
   background-size: cover;
   width: 100vmax;
@@ -54,4 +56,8 @@ body {
   filter: drop-shadow(0 0 1.4em rgb(255, 170, 221));
   box-shadow: 0 0.8em 0.8em -0.5em rgb(255, 170, 221);
   cursor: pointer;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=styles.css.map */
