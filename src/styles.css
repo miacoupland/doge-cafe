@@ -59,5 +59,8 @@ body {
 }
 
 main {
+  width: 80%;
   font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 0 auto;
 }/*# sourceMappingURL=styles.css.map */

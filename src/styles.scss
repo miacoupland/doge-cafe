@@ -72,7 +72,7 @@ body {
       }
       a:hover {
          color: $primary;
-         // Need to ask Mia about the funky interaction this has with the title.
+         // Need to ask Mia about the funky interaction this has with the title, also the button itself.
          filter: drop-shadow(0 0 1.4em rgb(255, 170, 221));
          box-shadow: 0 0.8em 0.8em -0.5em rgb(255, 170, 221);
          cursor: pointer;
@@ -81,5 +81,8 @@ body {
 }
 
 main {
+   width: 80%;
    font-family: 'Roboto', sans-serif;
+   text-align: center;
+   margin: 0 auto;
 }
