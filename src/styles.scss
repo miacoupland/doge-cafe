@@ -1,6 +1,6 @@
 $white: #ffffff;
-$primary: #ffbbdd;
-$secondry: #e47272;
+$primary-lightpink: #ffbbdd;
+$secondry-medpink: #e47272;
 
 //Header Font font-family: 'Righteous', cursive;
 //Normal Text Font font-family: 'Roboto', sans-serif;
@@ -46,7 +46,6 @@ body {
    background: url("https://preview.redd.it/a3ftzqi7ide71.png?auto=webp&s=7cc4389f7b7d621216c70cc9f1d43e57f76e3d0d")
       no-repeat center;
    background-size: cover;
-   // vmax = viewmax, 100 = 100%
    width: 100vmax;
    height: 20vmax;
    display: flex;
@@ -71,8 +70,7 @@ body {
          font-weight: 900;
       }
       a:hover {
-         color: $primary;
-         // Need to ask Mia about the funky interaction this has with the title, also the button itself.
+         color: $primary-lightpink;
          filter: drop-shadow(0 0 1.4em rgb(255, 170, 221));
          box-shadow: 0 0.8em 0.8em -0.5em rgb(255, 170, 221);
          cursor: pointer;
