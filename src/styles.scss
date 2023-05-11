@@ -1,4 +1,9 @@
 $white: #ffffff;
+$primary-lightpink: #ffbbdd;
+$secondry-medpink: #e47272;
+
+//Header Font font-family: 'Righteous', cursive;
+//Normal Text Font font-family: 'Roboto', sans-serif;
 
 body {
    margin: 0 auto;
@@ -8,7 +13,8 @@ body {
    font-size: 70px;
    text-transform: uppercase;
    text-align: center;
-   font-weight: 700;
+   font-family: 'Righteous', cursive;
+   font-weight: 400;
    background: -webkit-gradient(
       linear,
       left top,
@@ -36,12 +42,12 @@ body {
 }
 
 #nav-bar {
+   font-family: 'Righteous', cursive;
    background: url("https://preview.redd.it/a3ftzqi7ide71.png?auto=webp&s=7cc4389f7b7d621216c70cc9f1d43e57f76e3d0d")
       no-repeat center;
    background-size: cover;
-   // vmax = viewmax, 100 = 100%
    width: 100vmax;
-   height: 20vmax;
+   height: 15vmax;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -60,6 +66,21 @@ body {
       a {
          text-decoration: none;
          color: $white;
+         transition: border-color 0.3s, color 0.3s, transform 0.3s;
+         font-weight: 900;
+      }
+      a:hover {
+         color: $primary-lightpink;
       }
    }
+}
+
+main {
+   width: 80%;
+   font-family: 'Roboto', sans-serif;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 0 auto;
 }
