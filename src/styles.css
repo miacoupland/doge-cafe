@@ -30,7 +30,7 @@ body {
   background: url("https://preview.redd.it/a3ftzqi7ide71.png?auto=webp&s=7cc4389f7b7d621216c70cc9f1d43e57f76e3d0d") no-repeat center;
   background-size: cover;
   width: 100vmax;
-  height: 20vmax;
+  height: 15vmax;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,14 +53,14 @@ body {
 }
 #nav-bar .nav-link a:hover {
   color: #ffbbdd;
-  filter: drop-shadow(0 0 1.4em rgb(255, 170, 221));
-  box-shadow: 0 0.8em 0.8em -0.5em rgb(255, 170, 221);
-  cursor: pointer;
 }
 
 main {
   width: 80%;
   font-family: "Roboto", sans-serif;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
 }/*# sourceMappingURL=styles.css.map */

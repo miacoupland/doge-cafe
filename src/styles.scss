@@ -47,7 +47,7 @@ body {
       no-repeat center;
    background-size: cover;
    width: 100vmax;
-   height: 20vmax;
+   height: 15vmax;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -71,9 +71,6 @@ body {
       }
       a:hover {
          color: $primary-lightpink;
-         filter: drop-shadow(0 0 1.4em rgb(255, 170, 221));
-         box-shadow: 0 0.8em 0.8em -0.5em rgb(255, 170, 221);
-         cursor: pointer;
       }
    }
 }
@@ -81,6 +78,9 @@ body {
 main {
    width: 80%;
    font-family: 'Roboto', sans-serif;
-   text-align: center;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
    margin: 0 auto;
 }
