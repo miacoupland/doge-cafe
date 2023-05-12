@@ -1,29 +1,39 @@
 $white: #ffffff;
-$primary-lightpink: #ffbbdd;
-$secondry-medpink: #e47272;
+$yellow: #f1e88e;
+$lightpink: #ffbbdd;
+$peach: #e47272;
+$darkpurple: #1f113f;
+$darkmagenta: #6f058c;
+$darkyellow: #e2bc3a;
 
 //Header Font font-family: 'Righteous', cursive;
 //Normal Text Font font-family: 'Roboto', sans-serif;
 
 body {
    margin: 0 auto;
+   padding: 0 auto;
+
+   h2 h3 h4 h5 h6 {
+      padding: 0;
+      margin: 0;
+   }
 }
 
 #main-h1 {
    font-size: 70px;
    text-transform: uppercase;
    text-align: center;
-   font-family: 'Righteous', cursive;
+   font-family: "Righteous", cursive;
    font-weight: 400;
    background: -webkit-gradient(
       linear,
       left top,
       right top,
-      color-stop(10%, #f1e88e),
-      color-stop(50%, #ffbbdd),
-      color-stop(60%, #e47272)
+      color-stop(10%, $yellow),
+      color-stop(50%, $lightpink),
+      color-stop(60%, $peach)
    );
-   background: linear-gradient(to right, #f1e88e 10%, #ffbbdd 50%, #e47272 60%);
+   background: linear-gradient(to right, $yellow 10%, $lightpink 50%, $peach 60%);
    background-size: auto auto;
    background-clip: border-box;
    background-size: 200% auto;
@@ -42,13 +52,13 @@ body {
 }
 
 #nav-bar {
-   font-family: 'Righteous', cursive;
+   font-family: "Righteous", cursive;
    background: url("https://preview.redd.it/a3ftzqi7ide71.png?auto=webp&s=7cc4389f7b7d621216c70cc9f1d43e57f76e3d0d")
       no-repeat center;
    background-size: cover;
    width: 100vmax;
    height: 15vmax;
-   display: flex;
+   display: inline-block;
    flex-direction: column;
    justify-content: center;
 
@@ -57,6 +67,22 @@ body {
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-evenly;
+      position: relative;
+
+      #sub-nav {
+         display: none;
+         overflow: hidden;
+      }
+
+      #dogs:hover #sub-nav {
+         display: inline-block;
+         position: absolute;
+
+         .nav-link {
+            text-align: left;
+            text-decoration: none;
+         }
+      }
    }
 
    .nav-link {
@@ -70,17 +96,27 @@ body {
          font-weight: 900;
       }
       a:hover {
-         color: $primary-lightpink;
+         color: $lightpink;
       }
    }
 }
 
+body {
+   background-color: $darkpurple;
+}
+
 main {
-   width: 80%;
-   font-family: 'Roboto', sans-serif;
+   width: 70%;
+   font-family: "Roboto", sans-serif;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: center;
-   margin: 0 auto;
+   margin: 3vmax auto;
+
+}
+
+#welcome {
+   font-size: 100%;
+   color: $white;
 }
