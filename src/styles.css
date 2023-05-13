@@ -2,9 +2,16 @@ body {
   margin: 0 auto;
   padding: 0 auto;
 }
-body h2 h3 h4 h5 h6 {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
   padding: 0;
   margin: 0;
+  font-size: 100%;
+  font: inherit;
 }
 
 #main-h1 {
