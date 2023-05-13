@@ -9,23 +9,6 @@ $darkyellow: #e2bc3a;
 //Header Font font-family: 'Righteous', cursive;
 //Normal Text Font font-family: 'Roboto', sans-serif;
 
-body {
-   margin: 0 auto;
-   padding: 0 auto;
-
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   h6 {
-      padding: 0;
-      margin: 0;
-      font-size: 100%;
-      font: inherit;
-   }
-}
-
 #main-h1 {
    font-size: 70px;
    text-transform: uppercase;
@@ -56,6 +39,31 @@ body {
       }
    }
    margin: 0.7em auto;
+}
+
+body {
+   margin: 0 auto;
+   padding: 0 auto;
+   background-color: $darkpurple;
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   div,
+   p {
+      padding: 0;
+      margin: 0;
+      font-size: 100%;
+      font: inherit;
+   }
+
+   ol,
+   ul {
+      list-style: none;
+   }
 }
 
 #nav-bar {
@@ -108,10 +116,6 @@ body {
    }
 }
 
-body {
-   background-color: $darkpurple;
-}
-
 main {
    width: 70%;
    font-family: "Roboto", sans-serif;
@@ -120,9 +124,34 @@ main {
    flex-wrap: wrap;
    justify-content: center;
    margin: 3vmax auto;
-}
 
-#welcome {
-   font-size: 100%;
-   color: $white;
+   h2 {
+      font-family: "Righteous", cursive;
+      font-size: 3em;
+      color: $peach;
+      border-bottom: solid 2px $darkyellow;
+      font-weight: 700;
+   }
+
+   #welcome-div {
+      color: $white;
+      font-size: 1.4em;
+      font-family: "Roboto", sans-serif;
+      background-color: $darkmagenta;
+      border: 3px solid $yellow;
+      border-radius: 15px;
+      margin: 1em auto;
+
+      .welcome-h3 {
+         font-size: 1.3em;
+         font-family: "Righteous", cursive;
+         padding: 5px;
+         text-decoration: underline;
+         color: $yellow
+      }
+
+      .welcome-p {
+         padding: 10px;
+      }
+   }
 }
